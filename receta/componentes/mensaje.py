@@ -55,7 +55,6 @@ class Email_HE1(object):
         # Add attachment to your message and convert it to string
         message.attach(part)
         text = message.as_string()
-
         # send your email
         # with smtplib.SMTP("localhost", 25) as server:
         with smtplib.SMTP(self.smtpservidor, \
