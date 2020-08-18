@@ -8,6 +8,7 @@ from email.mime.text import MIMEText
 
 clavecorreosender = 'CRRBCRRBCRRBCRRB1978'
 
+
 class Email_HE1(object):
     def __init__(self, subject, sender_email, receiver_email, body, filename, smtpservidor, port, password):
         self.subject = subject
@@ -57,7 +58,8 @@ class Email_HE1(object):
 
         # send your email
         # with smtplib.SMTP("localhost", 25) as server:
-        with smtplib.SMTP(self.smtpservidor, port=self.port) as server:
+        with smtplib.SMTP(self.smtpservidor, \
+                          port=self.port) as server:
             server.ehlo()
             server.starttls()
             server.ehlo()
