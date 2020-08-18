@@ -16,7 +16,7 @@ class PeriodicScheduler(object):
     def run(self):
         self.scheduler.run()
 
-asynca =1
+
 infraestructura = Infraestructura('C:\\data\\', 'christian19782013@gmail.com')
 
 # infraestructura.ejecuta_flujo()
