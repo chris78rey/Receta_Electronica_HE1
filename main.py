@@ -19,9 +19,14 @@ class PeriodicScheduler(object):
 
 infraestructura = Infraestructura('C:\\data\\', 'christian19782013@gmail.com')
 
-# infraestructura.ejecuta_flujo()
+for bucle in range(1000000):
+    try:
+        # time.sleep(1)
+        infraestructura.ejecuta_flujo()
+    except Exception as e:
+        print(e.message)
 #
-INTERVAL = 20  # every
-periodic_scheduler = PeriodicScheduler()
-periodic_scheduler.setup(INTERVAL, infraestructura.ejecuta_flujo)  # it executes the event just once
-periodic_scheduler.run()  # it st    arts the scheduler
+# INTERVAL = 20  # every
+# periodic_scheduler = PeriodicScheduler()
+# periodic_scheduler.setup(INTERVAL, infraestructura.ejecuta_flujo)  # it executes the event just once
+# periodic_scheduler.run()  # it st    arts the scheduler
