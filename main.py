@@ -1,7 +1,7 @@
-from receta.componentes.inicio import Infraestructura
-
 import sched
 import time
+
+from receta.componentes.inicio import Infraestructura
 
 
 class PeriodicScheduler(object):
